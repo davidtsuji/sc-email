@@ -1,0 +1,31 @@
+table.button {
+
+  border-collapse: separate;
+
+  tr {
+    td {
+      
+      background-color: @sc-color-blue;
+      border-radius: 3px;
+      border: 1px solid darken(@sc-color-blue, 3%);
+      border-collapse: separate;
+      padding: @base-padding-50 @base-padding-50;
+      text-align: center;
+
+      #gradient.vertical(lighten(@sc-color-blue, 5%), darken(@sc-color-blue, 5%));
+
+      a {
+        margin: 0;
+        color: @sc-color-blue-darkest;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  &.button-block {
+    width: 100%;
+  }
+
+}

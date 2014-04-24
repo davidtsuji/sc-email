@@ -1,0 +1,44 @@
+table.panel {
+
+  margin-bottom: @base-padding;
+  border: 1px solid @sc-color-grey;
+  width: 100%;
+
+  >thead {
+    >tr {
+      background-color: @sc-color-grey;
+      
+      >td {
+        padding: @base-padding;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  >tbody {
+    >tr {
+      >td {
+        padding: @base-padding;
+      }
+    }
+  }
+
+  >tfoot {
+    >tr {
+      >td {
+        padding: @base-padding-75 @base-padding-75;
+        text-align: center;
+      }
+    }
+  }
+
+  >tbody + tfoot {
+    >tr {
+      >td {
+        padding-top: 0;
+      }
+    }
+  }
+
+}

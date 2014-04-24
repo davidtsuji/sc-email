@@ -1,0 +1,6 @@
+.DS_Store
+.tmp/
+.git*
+test/
+bower_components/
+testClient/

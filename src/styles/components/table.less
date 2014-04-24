@@ -1,0 +1,41 @@
+table {
+
+  .font();
+  line-height: @base-line-height;
+
+  &.table {
+    width: 100%;
+
+    >thead {
+      >tr {
+        >td {
+          padding: @base-padding-50 @base-padding-50 @base-padding @base-padding-50;
+          font-weight: bold;
+        }
+      }
+    }
+
+    >tbody {
+
+      >tr {
+
+        &:first-child {
+          >td {
+            border-top: none;
+          }
+        }
+
+        >td {
+
+          padding: @base-padding-50;
+          border-top: 1px solid @sc-color-grey;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

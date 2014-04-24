@@ -1,0 +1,122 @@
+table.barchart {
+
+  width: 100%;
+
+  thead {
+    >tr {
+      >td {
+        text-align: center;
+        font-weight: normal;
+        padding-bottom: 0px;
+
+        &:nth-child(2) {
+          padding: @base-padding-50 @base-padding-50 @base-padding (@base-padding-50 * 3);
+
+        }
+
+        &:nth-child(4) {
+          padding: @base-padding-50 (@base-padding-50 * 3) @base-padding @base-padding-50;
+
+        }
+
+      }
+    }
+  }
+
+  >tbody {
+
+    >tr {
+
+      >td {
+
+        height: 45px;
+
+        &.barchart-item-num {
+          font-size: 25px;
+          text-align: center;
+          color: @sc-color-grey;
+        }
+
+        &.barchart-item-label {
+          padding-right: 20px;
+          text-align: right;
+          font-size: 12px;
+        }
+
+        &.barchart-item-bar {
+          padding-left: 0px;
+          padding-right: 0px;
+
+          .barchart-bar {
+
+            padding: 0;
+            margin: 0;
+            height: 10px;
+            border-radius: 2px;
+
+            td {
+              padding: 0;
+              margin: 0;
+              height: 10px;
+              font-size: 11px;
+            }
+
+            &.barchart-green {
+              background-color: @sc-color-green;
+              td {
+                color: @sc-color-green;
+              }
+            }
+
+            &.barchart-yellow {
+              background-color: @sc-color-yellow;
+              td {
+                color: @sc-color-yellow;
+              }
+            }
+
+            &.barchart-blue {
+              background-color: @sc-color-blue;
+              td {
+                color: @sc-color-blue;
+              }
+            }
+
+            &.barchart-red {
+              background-color: @sc-color-red;
+              td {
+                color: @sc-color-red;
+              }
+            }
+
+            &.barchart-orange {
+              background-color: @sc-color-orange;
+              td {
+                color: @sc-color-orange;
+              }
+            }
+
+          }
+          
+        }
+
+        &.barchart-item-indicator {
+
+        }
+
+        &.barchart-item-active {
+          background-color: @sc-color-grey-light;
+
+          &.barchart-item-num {
+            color: @sc-color-white;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

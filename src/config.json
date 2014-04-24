@@ -1,0 +1,13 @@
+{
+  "test": {
+    "AWS": {
+      "AWSAccessKeyID": "",
+      "AWSSecretKey": ""
+    },
+    "sender": "dts@sitecore.net",
+    "recipients": [ {
+      "name": "David",
+      "email": "dts@sitecore.net"
+    } ]
+  }
+}
